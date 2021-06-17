@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -Wall $CFILE.c -o firstc
+gcc -e $CFILE.c -o firstc
