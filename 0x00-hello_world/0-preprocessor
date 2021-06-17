@@ -1,3 +1,2 @@
 #!/bin/bash
 gcc -Wall $CFILE.c -o firstc
-
