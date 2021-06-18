@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -  This a C program that prints the size of various types on the computer it is compiled and run on
+ * main - This a C program that prints the size of various type on the computer
  *
  * Return: Always 0.
  */
