@@ -1,20 +1,15 @@
-#include <stdio.h>
+#include "holberton.h"
 /**
- * main - this a C program that prints "Holberton" with putchar funtion.
+ * main - this C program that prints "Holberton" with _putchar.
  *
- * return: always 0.
+ * Return: Always 0.
  */
 int main(void)
 {
-putchar('H');
-putchar('o');
-putchar('l');
-putchar('b');
-putchar('e');
-putchar('r');
-putchar('t');
-putchar('o');
-putchar('n');
-putchar('\n');
+char b = "Holberton\n";
+while (b)
+{
+_putchar(b++);
+}
 return (0);
 }
