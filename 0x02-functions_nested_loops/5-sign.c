@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
  * print_sign - this c program prints sing of number
- *
- * Return: Always 0.
+ * @n: Number print sign
+ * Return: 0 or 1
  */
-int print_sign(int n);
+int print_sign(int n)
 {
 if (n > 0)
 {
