@@ -19,6 +19,6 @@ int main(void)
 
 	}
 
-	printf("%d\n", y);
+	printf("%d\n", y-1);
 	return (0);
 }
