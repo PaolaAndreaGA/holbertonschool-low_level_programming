@@ -13,8 +13,10 @@ void puts2(char *str)
 	for (c = 0; str[c] != 0; c++)
 	{
 		if (c % 2 == 0)
+		{
 			x = str[c];
 		_putchar(x);
+		}
 	}
 	_putchar('\n');
 }
