@@ -8,16 +8,17 @@
 void puts2(char *str)
 {
 
-	int c;
+	int c = 0;
 	int x;
 
 	while (str[c] != '\0')
 	{
 		c++;
+
 		if (c % 2 == 0)
 		{
 
-			x =  str[c];
+			x = str[c];
 			_putchar(x);
 
 		}
