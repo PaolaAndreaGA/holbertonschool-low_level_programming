@@ -13,9 +13,8 @@ void _puts(char *str)
 	while (str[c] != '\0')
 	{
 
-	c++;
-
-	_putchar(str[c]);
+		_putchar(str[c]);
+		c++;
 	}
 _putchar('\n');
 }
