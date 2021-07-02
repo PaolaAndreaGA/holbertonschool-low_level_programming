@@ -3,7 +3,7 @@
 
 /**
  *string_toupper - changes all lowercase letters of a string to uppercase.
- *
+ *@str: pointer
  * Return: string with char
  */
 
@@ -20,7 +20,7 @@ char *string_toupper(char *str)
 
 		if (str[x] >= 'a' && str[x] <= 'z')
 		{
-			str[x] = 'a' - 'A';
+			str[x] -= 32;
 		}
 	}
 
