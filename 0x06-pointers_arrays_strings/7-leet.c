@@ -13,8 +13,6 @@ char *leet(char *str)
 
 	int x, y;
 
-	if (str == 0)
-		return (0);
 
 	for (x = 0; str[x] != '\0'; x++)
 	{
