@@ -23,7 +23,7 @@ char *leet(char *str)
 
 			if (let[y] == str[x])
 			{
-			str[x] = num[y];
+				str[x] = num[y];
 			}
 		}
 	}
