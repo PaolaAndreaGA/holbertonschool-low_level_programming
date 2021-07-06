@@ -3,7 +3,7 @@
  * set_string -  sets the value of a pointer to a char.
  * @s: direct parameter
  * @to: array copy
- * Return: void
+ * Return: c or null
  */
 
 void set_string(char **s, char *to)
