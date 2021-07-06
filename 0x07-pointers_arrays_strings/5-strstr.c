@@ -24,19 +24,19 @@ char *_strstr(char *haystack, char *needle)
 				break;
 			}
 		}
-		
+
 		if (needle[j])
 		{
 
 			j = 0;
 
 		}
-		
+
 		else
 		{
 			return (haystack + i);
 		}
 	}
-	
+
 	return (0);
 }
