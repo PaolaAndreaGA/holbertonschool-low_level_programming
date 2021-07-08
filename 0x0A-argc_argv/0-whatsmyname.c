@@ -8,12 +8,12 @@
 
 int main(int argc, char *argv[])
 {
-	int x = 0;
+	int x;
 
-	while (x < argc)
+	for(x = 0; x < argc; x++)
 	{
 	printf("%s'\n'", argv[0]);
-	x++;
+
 	}
 
 	return (0);
