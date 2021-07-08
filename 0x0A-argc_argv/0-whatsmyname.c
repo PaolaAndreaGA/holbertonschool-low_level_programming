@@ -8,8 +8,13 @@
 
 int main(int argc, char *argv[])
 {
+	int x = 0;
 
+	while (x < argc)
+	{
 	printf("%s'\n'", argv[0]);
-	
+	x++;
+	}
+
 	return (0);
 }
