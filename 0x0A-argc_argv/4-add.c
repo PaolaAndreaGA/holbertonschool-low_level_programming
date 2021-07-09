@@ -10,24 +10,21 @@
 
 int main(int argc, char *argv[])
 {
-	int i;
-	unsigned int adi;
+	int i, adi = 0;
 
-	adi = 0;
+	if (argc < 1)
+		return (0);
+
 	for (i = 1; i < argc; i++)
 	{
-		if (is_positive_number(argv[i]))
+		if (!atoi(argv[i]))
 		{
-			adi += atoi(argv[i]);
-		}
-		else
-		{
-			printf("Error\n");
+			printf("%s\n", "Error");
 			return (1);
 		}
+		adi += atoi(argv[i]);
 	}
-
-	printf("%u\n", adi);
+	printf("%d\n", adi);
 
 	return (0);
 }
