@@ -19,13 +19,13 @@ int main(int argc, char *argv[])
 	{
 		if (!atoi(argv[i]))
 		{
-			printf("%s\n", "Error");
+			printf("Error\n");
 			return (1);
 		}
 
 		adi += atoi(argv[i]);
 	}
 
-	printf("%d\n", adi);
+	printf("%d\n", sum);
 	return (0);
 }
