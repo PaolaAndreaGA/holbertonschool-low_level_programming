@@ -36,7 +36,7 @@ int _sqrt_recursion(int n)
 /**
  *_sqrt_aux - sqrt_recursion auxiliar.
  *@n: variable
- *@a; variable
+ *@a: variable
  *Return: value function
  */
 
