@@ -31,7 +31,7 @@ char *str_concat(char *s1, char *s2)
 		s2 = "";
 	}
 
-	n =  malloc(sizeof(char) * (x + y + 1));
+	z =  malloc(sizeof(char) * (x + y + 1));
 
 	if (!z)
 		return ('\0');
@@ -44,9 +44,9 @@ char *str_concat(char *s1, char *s2)
 	}
 	if (s2)
 	{
-		for (si2 = 0; s2[y]; y++)
-			n[x + y] = s2[y];
+		for (y = 0; s2[y]; y++)
+			z[x + y] = s2[y];
 	}
-	n[x + y] = '\0';
-	return (n);
+	z[x + y] = '\0';
+	return (z);
 }
