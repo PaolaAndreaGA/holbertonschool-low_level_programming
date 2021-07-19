@@ -3,7 +3,8 @@
 #ifndef DOG_H
 #define DOG_H
 
-/**struct dog - DOG DEFINITION
+/**
+ *struct dog - DOG DEFINITION
  *@name:  Dog's name
  *@age: Dog's age
  *@owner: Dog's owner
