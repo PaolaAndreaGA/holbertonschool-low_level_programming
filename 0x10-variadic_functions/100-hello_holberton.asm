@@ -2,12 +2,9 @@
 	section .text
 main:
 	
-
-	global _start
-_start:
 	mov rax, 1
 	mov rdi, 1
-	mov rsi, message
+	mov rsi, msg
 	mov rdx, msglen
 	syscall
 	
@@ -16,5 +13,5 @@ _start:
 	syscall
 
 	section .data
-	message db "Hello, Holberton", 10
-	maglen:	equ$ -msg
+msg: db "Hello, Holberton", 10
+msglen:	equ $ - msg
