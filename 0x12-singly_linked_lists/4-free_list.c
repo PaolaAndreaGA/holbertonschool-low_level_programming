@@ -8,14 +8,17 @@
 
 void free_list(list_t *head)
 {
+	list_t *checkup;
+
 	if (head == NULL)
 	{
 		return;
 	}
-	if ((*head).next != NULL)
+	while (head != NULL)
 	{
-		free_list((*head).next);
+		checkup = (*head).next;
 		free((*head).str);
 		free(head);
+		head = checkup;
 	}
 }
