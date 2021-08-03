@@ -27,5 +27,5 @@ void print_char(va_list c);
 void print_int(va_list i);
 void print_float(va_list f);
 void print_str(va_list s);
-
+int _printf(const char *format, ...)
 #endif /*_VARIADIC_FUNTIONS_H_*/

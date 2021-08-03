@@ -8,8 +8,6 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-
-
 	list_t *prov;
 
 	prov = malloc(sizeof(list_t));
@@ -19,6 +17,11 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	}
 
+	prov->next = *head;
+	prov->str = strdup(str);
+	prov->len = strlen(str);
+
+	*head = prov;
 
 	return (*head);
 }
