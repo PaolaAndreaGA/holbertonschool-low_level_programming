@@ -16,8 +16,10 @@ void free_listint(listint_t *head)
 	{
 		return;
 	}
-
-	prov = head;
-	head = head->next;
-	free(prov);
+	while (head != NULL)
+	{
+		prov = (*head).next;
+		free(head);
+		head = prov;
+	}
 }
