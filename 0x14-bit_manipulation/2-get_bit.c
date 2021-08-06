@@ -1,9 +1,10 @@
 #include "main.h"
-
 /**
- *print_binary - prints the binary representation of a number.
- *@n:entry number
- *Return: nothing
+ * get_bit -  function that returns the value of a bit
+ *  at a given index.
+ * @n: data entry
+ * @index: positions to move
+ * Return: Always 0.
  */
 
 int get_bit(unsigned long int n, unsigned int index)
@@ -19,5 +20,4 @@ int get_bit(unsigned long int n, unsigned int index)
 	}
 
 	return (1);
-}       	
-		
+}
