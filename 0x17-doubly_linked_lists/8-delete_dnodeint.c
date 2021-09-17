@@ -3,7 +3,7 @@
  * delete_dnodeint_at_index - function to delete node at index
  * @head: double pointer of dlistint_t type to head of linked list
  * @index: index at which node will be deleted
- * Return: 1 if successful or -1 if failed
+ * Return: 1  or -1
  */
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
