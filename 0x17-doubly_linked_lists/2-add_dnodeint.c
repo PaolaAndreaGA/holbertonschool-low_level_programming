@@ -3,7 +3,7 @@
  * add_dnodeint - adds a node at the beginning of a list
  * @head: double pointer to the head of a list
  * @n:  element to add to the new node
- * Return: new element, or NULL 
+ * Return: new element, or NULL
  */
 
 
@@ -13,7 +13,7 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	dlistint_t *aux = *head;
 
 	new = malloc(sizeof(dlistint_t));
-	if (new == NULL|| head == NULL)
+	if (new == NULL || head == NULL)
 		return (NULL);
 
 	new->n = n;
