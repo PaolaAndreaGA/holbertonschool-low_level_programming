@@ -28,7 +28,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 
 	for (counter = 0; counter < size; counter++)
 	{
-		dict->array[counter] == NULL;
+		dict->array[counter] = NULL;
 	}
 
 	return (dict);
