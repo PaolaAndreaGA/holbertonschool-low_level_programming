@@ -7,29 +7,25 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-
 	unsigned long int counter;
 	hash_table_t *dict = NULL;
 
+
 	dict = malloc(sizeof(hash_table_t));
 	if (dict == NULL)
-	{
 		return (NULL);
-	}
-	dict->size = size;
-	dict->array = malloc(sizeof(hash_table_t *) * size);
 
+	dict->size = size;
+
+	dict->array = malloc(sizeof(hash_node_t *) * size);
 	if (dict->array == NULL)
 	{
 		free(dict);
 		return (NULL);
-
 	}
-
 	for (counter = 0; counter < size; counter++)
 	{
-		dict->array[counter] = NULL;
+		dict->array[count] = NULL;
 	}
-
 	return (dict);
 }
