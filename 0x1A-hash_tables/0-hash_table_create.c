@@ -8,7 +8,7 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	unsigned long int counter;
-	hash_table_t *dict = NULL;
+	hash_table_t *dict;
 
 
 	dict = malloc(sizeof(hash_table_t));
@@ -20,7 +20,7 @@ hash_table_t *hash_table_create(unsigned long int size)
 	dict->array = malloc(sizeof(hash_node_t *) * size);
 	if (dict->array == NULL)
 	{
-		free(dict);
+
 		return (NULL);
 	}
 	for (counter = 0; counter < size; counter++)
