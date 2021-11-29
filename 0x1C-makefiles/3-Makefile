@@ -3,13 +3,13 @@ OBJ = $(SRC:%.c=%.o)
 NAME = school
 RM =  rm –f
 
-all: $(SRC)
-        $(CC) $(SRC) -O $(NAME)
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
 
 .PHONY : clean oclean fclean re
 
 clean:
-	$(RM) *~$(NAME)
+	$(RM) *~ $(NAME)
 oclean:
 	$(RM) $(OBJ)
 
